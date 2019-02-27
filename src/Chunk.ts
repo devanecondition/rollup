@@ -823,7 +823,7 @@ export default class Chunk {
 			let globalName: string = undefined as any;
 			if (dep instanceof ExternalModule) {
 				id = dep.renderPath;
-				if (options.format === 'umd' || options.format === 'iife') {
+				if (options.format === 'umd' || options.format === 'iife' || options.format === 'c74max') {
 					globalName = getGlobalName(
 						dep,
 						options.globals,

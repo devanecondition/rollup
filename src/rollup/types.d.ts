@@ -466,7 +466,8 @@ export type ModuleFormat =
 	| 'module'
 	| 'system'
 	| 'systemjs'
-	| 'umd';
+	| 'umd'
+	| 'c74max';
 
 export type OptionsPaths = Record<string, string> | ((id: string) => string);
 

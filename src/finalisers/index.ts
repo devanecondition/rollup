@@ -2,6 +2,7 @@ import { Bundle as MagicStringBundle } from 'magic-string';
 import { ChunkDependencies, ChunkExports } from '../Chunk';
 import { OutputOptions, RollupWarning } from '../rollup/types';
 import amd from './amd';
+import c74max from './c74max';
 import cjs from './cjs';
 import es from './es';
 import iife from './iife';
@@ -29,6 +30,6 @@ export type Finaliser = (
 	options: OutputOptions
 ) => MagicStringBundle;
 
-export default { system, amd, cjs, es, iife, umd } as {
+export default { system, amd, cjs, es, iife, umd, c74max } as {
 	[format: string]: Finaliser;
 };
