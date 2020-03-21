@@ -216,10 +216,11 @@ function normalizeFormat(format: string): ModuleFormat {
 		case 'amd':
 		case 'iife':
 		case 'umd':
+		case 'c74max':
 			return format;
 		default:
 			return error({
-				message: `You must specify "output.format", which can be one of "amd", "cjs", "system", "es", "iife" or "umd".`,
+				message: `You must specify "output.format", which can be one of "amd", "cjs", "system", "es", "iife", "umd" or "c74max".`,
 				url: `https://rollupjs.org/guide/en/#output-format`
 			});
 	}
